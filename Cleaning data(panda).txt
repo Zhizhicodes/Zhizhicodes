@@ -1,0 +1,12 @@
+Cleaning data(panda)
+import panda as pd
+df=pd.read_csv(path)#load the data.
+df.info() #descibes the data
+df.dropna # returns a new dataframe
+df.dropna(inplace=TRUE)#changes original data
+df.fillna(130,inplace=TRUE)#replace null values
+df["column_name"].fillna(130,inplace=True)#replace data in specific column
+x=df["Calories"].mean()
+df["Calories"].fill(x,inplace=TRUE)
+ 
+
